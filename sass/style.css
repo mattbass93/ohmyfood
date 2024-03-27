@@ -1,0 +1,279 @@
+@charset "UTF-8";
+:root {
+  --primary-color: #9356DC;
+  --secondary-color: #FF79DA;
+  --tertiary-color: #99E2D0;
+  --background-color: #F6F6F6;
+}
+
+* {
+  font-family: "Roboto", "sans-serif";
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.footer-logo {
+  width: 98px;
+  height: 18px;
+  margin: 20px 0 20px 0;
+}
+
+footer > div {
+  margin: 5px 0;
+}
+
+footer > div > img {
+  margin-right: 5px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0 5px 0;
+}
+
+/*Restaurants Backgrounds*/
+* {
+  font-family: "Roboto", "sans-serif";
+}
+
+h2 {
+  font-size: 2.4em;
+  font-weight: bold;
+}
+
+/*HEADER*/
+h1 {
+  width: 100%;
+  height: 63px;
+  margin: 0;
+  text-align: center;
+}
+
+h1 > img {
+  width: 180px;
+  margin-top: 20px;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightgrey;
+  border: 1px solid lightgrey;
+  box-shadow: 0 5px 10px lightgrey;
+  height: 50px;
+  background-color: #EAEAEA;
+}
+
+.localisation > img {
+  margin-right: 10px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+.headline > h2 {
+  text-align: center;
+}
+
+.headline > p {
+  text-align: center;
+}
+
+.headline > button {
+  background: linear-gradient(var(--secondary-color), var(--primary-color));
+  height: 50px;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0 5px 10px lightgray;
+  transition: box-shadow 1s;
+}
+
+.headline > button:hover {
+  opacity: 0.8;
+  box-shadow: 5px 5px 10px grey;
+}
+
+.headline > button > span {
+  font-size: 1.2em;
+  color: white;
+  padding: 0 20px;
+}
+
+/*MAIN*/
+/*FONCTIONNEMENT*/
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+h3 {
+  padding-top: 40px;
+  font-size: 1.3em;
+}
+
+h3, .fonctionnement-cards, .restaurant-cards {
+  width: 90%;
+}
+
+.fonctionnement-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fonctionnement-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+  transition: opacity 1s;
+}
+
+.fonctionnement-card > img {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -10px;
+}
+
+.fonctionnement-card > button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 73px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px lightgray;
+  background-color: #F6F6F6;
+  transition: box-shadow 1s;
+}
+
+.fonctionnement-card > button > span,
+.fonctionnement-card > button > img {
+  margin-left: 20px;
+}
+
+.fonctionnement-card > button:hover {
+  box-shadow: 5px 5px 10px grey;
+  background: white;
+}
+
+/*RESTAURANTS*/
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
+  padding-bottom: 60px;
+}
+
+.restaurant-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1em 0;
+}
+
+.restaurant-card {
+  /*  border: 2px solid black; */
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  height: 251px;
+  /*  max-width: 450px; */
+}
+
+.restaurant-card > a,
+.restaurant-card > a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/*Ajout du background de restaurant*/
+#la_palette_du_gout {
+  background: url("/projetOpenClassrooms/projet3/images/restaurants/la_palette_du_gout.jpg");
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+#la_note_enchantee {
+  background: url("/projetOpenClassrooms/projet3/images/restaurants/la_note_enchantee.jpg");
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+#a_la_française {
+  background: url("/projetOpenClassrooms/projet3/images/restaurants/a_la_française.jpg");
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+#le_delice_des_sens {
+  background: url("/projetOpenClassrooms/projet3/images/restaurants/le_delice_des_sens.jpg");
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.restaurant-new {
+  float: right;
+  margin: 5px 5px 0 0;
+}
+
+.restaurant-name-localisation-like {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.restaurant-name-localisation {
+  margin: 10px 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-name {
+  margin: 0;
+}
+
+.restaurant-localisation {
+  margin-top: 10px;
+}
+
+.restaurant-like {
+  height: 21px;
+  margin-right: 20px;
+  background-color: white;
+}
+
+/*RESPONSIVE*//*# sourceMappingURL=style.css.map */
