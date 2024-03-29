@@ -46,13 +46,6 @@ footer a {
 }
 
 /*
-  $restaurants_backgrounds: (
-   "la_palette_du_gout": "/images/restaurants/la_palette_du_gout.jpg",
-   "la_note_enchantee": "./../../images/restaurants/la_note_enchantee.jpg",
-   "a_la_française": "./../../images/restaurants/a_la_française.jpg",
-   "le_delice_des_sens": "./../../images/restaurants/le_delice_des_sens.jpg",
-  ); */
-/*
 @import "./backgrounds.scss"; */
 h3 {
   font-weight: 400;
@@ -93,7 +86,7 @@ h2 {
 
 /*Ajout du background correspondant*/
 #la_palette_du_gout {
-  background: url("/images/restaurants/la_palette_du_gout.jpg");
+  background: url("./../../images/restaurants/la_palette_du_gout.jpg");
   width: 100%;
   height: 275px;
   background-size: cover;
