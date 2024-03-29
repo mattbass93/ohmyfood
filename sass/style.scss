@@ -14,8 +14,8 @@ h2 {
     font-size: 2.4em;   
     font-weight: bold; 
 }
-
-
+ 
+ 
 
 /*HEADER*/ 
 h1 {
@@ -180,15 +180,15 @@ h3, .fonctionnement-cards, .restaurant-cards {
 }
 
 /*Ajout du background de restaurant*/
-@each $id, $path in $backgrounds {
+@each $id, $path in $index_backgrounds {
     ##{$id} {
         background: url($path);
         height: 180px;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover; 
         border-radius: 10px;
     }
-}
+} 
 
 
 .restaurant-new {

@@ -86,28 +86,28 @@ h2 {
 
 /*Ajout du background correspondant*/
 #la_palette_du_gout {
-  background: url("../images/restaurants/la_palette_du_gout.jpg");
+  background: url("./../../images/restaurants/la_palette_du_gout.jpg");
   width: 100%;
   height: 275px;
   background-size: cover;
 }
 
 #la_note_enchantee {
-  background: url("../images/restaurants/la_note_enchantee.jpg");
+  background: url("./../../images/restaurants/la_note_enchantee.jpg");
   width: 100%;
   height: 275px;
   background-size: cover;
 }
 
 #a_la_française {
-  background: url("../images/restaurants/a_la_française.jpg");
+  background: url("./../../images/restaurants/a_la_française.jpg");
   width: 100%;
   height: 275px;
   background-size: cover;
 }
 
 #le_delice_des_sens {
-  background: url("../images/restaurants/le_delice_des_sens.jpg");
+  background: url("./../../images/restaurants/le_delice_des_sens.jpg");
   width: 100%;
   height: 275px;
   background-size: cover;
