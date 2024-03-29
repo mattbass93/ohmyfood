@@ -47,7 +47,7 @@ h2 {
 }
 
 /*Ajout du background correspondant*/
-@each $id, $path in $restaurants_backgrounds {
+@each $id, $path in $backgrounds {
     ##{$id} {
         background: url($path); 
         width: 100%; 

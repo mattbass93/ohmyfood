@@ -214,7 +214,7 @@ h3, .fonctionnement-cards, .restaurant-cards {
 
 /*Ajout du background de restaurant*/
 #la_palette_du_gout {
-  background: url("./../images/restaurants/la_palette_du_gout.jpg");
+  background: url("/images/restaurants/la_palette_du_gout.jpg");
   height: 180px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -222,7 +222,7 @@ h3, .fonctionnement-cards, .restaurant-cards {
 }
 
 #la_note_enchantee {
-  background: url("./../images/restaurants/la_note_enchantee.jpg");
+  background: url("/images/restaurants/la_note_enchantee.jpg");
   height: 180px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -230,7 +230,7 @@ h3, .fonctionnement-cards, .restaurant-cards {
 }
 
 #a_la_française {
-  background: url("./../images/restaurants/a_la_française.jpg");
+  background: url("/images/restaurants/a_la_française.jpg");
   height: 180px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -238,7 +238,7 @@ h3, .fonctionnement-cards, .restaurant-cards {
 }
 
 #le_delice_des_sens {
-  background: url("./../images/restaurants/le_delice_des_sens.jpg");
+  background: url("/images/restaurants/le_delice_des_sens.jpg");
   height: 180px;
   background-repeat: no-repeat;
   background-size: cover;

@@ -180,7 +180,7 @@ h3, .fonctionnement-cards, .restaurant-cards {
 }
 
 /*Ajout du background de restaurant*/
-@each $id, $path in $index_backgrounds {
+@each $id, $path in $backgrounds {
     ##{$id} {
         background: url($path);
         height: 180px;
@@ -194,7 +194,7 @@ h3, .fonctionnement-cards, .restaurant-cards {
 .restaurant-new {
     float: right;
     margin: 5px 5px 0 0;
-}
+} 
 
 .restaurant-name-localisation-like {
     display: flex;
