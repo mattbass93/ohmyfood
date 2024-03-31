@@ -5,17 +5,17 @@
 /*Restaurants Backgrounds*/
 @import "./utils/backgrounds.scss";
 
-
+ 
 * {
     font-family: 'Roboto', 'sans-serif';  
-} 
-  
+}
+
 h2 {
     font-size: 2.4em;   
     font-weight: bold; 
 }
- 
- 
+
+
 
 /*HEADER*/ 
 h1 {
@@ -36,7 +36,7 @@ h1 > img {
     align-items: center;
     background: lightgrey;
     border: 1px solid lightgrey;
-    box-shadow: 0 5px 10px lightgrey; 
+    box-shadow: 0 5px 10px lightgrey;
     height: 50px;
     background-color: #EAEAEA;
 }
@@ -180,21 +180,27 @@ h3, .fonctionnement-cards, .restaurant-cards {
 }
 
 /*Ajout du background de restaurant*/
+
 @each $id, $path in $index_backgrounds {
     ##{$id} {
         background: url($path);
         height: 180px;
         background-repeat: no-repeat;
-        background-size: cover; 
+        background-size: cover;
         border-radius: 10px;
     }
-} 
-
+}
+     
+/*
+#la_palette_du_gout {
+     background-image: url("./../../images/restaurants/la_palette_du_gout.jpg");
+} */ 
+ 
 
 .restaurant-new {
     float: right;
     margin: 5px 5px 0 0;
-} 
+}
 
 .restaurant-name-localisation-like {
     display: flex;
@@ -217,15 +223,79 @@ h3, .fonctionnement-cards, .restaurant-cards {
 }
 
 
+.restaurant-likes {
+    position: relative;
+}
+
+
 .restaurant-like {
     height: 21px;
     margin-right: 20px;
     background-color: white;
 }
 
+.restaurant-like-full {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 2s; 
+}
 
+.restaurant-like-full:hover {
+    opacity: 1;
+  }
 
 
 
 
 /*RESPONSIVE*/
+@media (min-width: 950px) {
+
+    h3, .fonctionnement-cards {
+        width: 75%
+    }
+    
+    
+    .fonctionnement-cards {
+        flex-direction: row;
+        gap: 0 2em;
+    }
+
+    .restaurant-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        gap: 3em 3em
+    }
+
+    .restaurant-card {
+        width: 45%
+    }
+
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end; 
+        height: 114px;
+    }
+
+    .footer-logo {
+        order: 2;
+        margin-right: 50px;
+        margin-top : 65px
+    }
+
+    footer a {
+        margin-right : 20px;
+    }
+
+    footer > a:last-child {
+        margin-right: 62px;
+    }
+
+    footer > div,
+    footer > a {
+        margin-top: 50px;
+    }
+} 

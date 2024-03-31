@@ -5,15 +5,15 @@
 
 
 
- 
+   
 /*
 @import "./backgrounds.scss"; */
 
-h3 {  
+h3 { 
     font-weight: 400;
     font-size: 1em;
     margin-bottom: -5px;
-} 
+}
 
 h1 {
     width: 100%;
@@ -53,11 +53,11 @@ h2 {
         width: 100%; 
         height: 275px;
         background-size: cover;
-    } 
+    }
 }
- 
-   
- 
+
+
+
 /*MAIN*/
 
 main {
@@ -89,12 +89,48 @@ main {
     margin-right: 20px;
 }
 
+.restaurant-like-full {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 2s; 
+}
+
+.restaurant-like-full:hover {
+    opacity: 1;
+  }
+
 .category-title {
     margin-bottom: 10px;
 }
 
+.entrées,
+.plats,
+.desserts {
+    width: 90%;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+}
 
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
 
+.plats {
+    animation-delay: 1s;
+}
+
+.desserts {
+    animation-delay: 1.5s;
+}
 
 .card {
     display: flex;
@@ -240,3 +276,56 @@ main {
 
 
 
+
+/*RESPONSIVE*/
+@media (min-width: 1000px) {
+
+    .logo-and-back {
+        height: 96px;
+    }
+
+    .restaurant-background {
+        width: 100%;
+        background-size : 100%;
+        background-repeat: no-repeat
+    }
+
+    main {
+        width: 70%;
+        margin: -60px auto 0 auto;
+    }
+
+    .entrées,
+    .plats,
+    .desserts {
+        width: 60%
+    }
+
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end; 
+        height: 114px;
+    }
+
+    .footer-logo {
+        order: 2;
+        margin-right: 50px;
+        margin-top : 65px
+    }
+
+    footer a {
+        margin-right : 20px;
+    }
+
+    footer > a:last-child {
+        margin-right: 62px;
+    }
+
+    footer > div,
+    footer > a {
+        margin-top: 50px;
+    }   
+
+    
+}
