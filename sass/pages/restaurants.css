@@ -16,6 +16,23 @@ body {
   overflow-x: hidden;
 }
 
+:root {
+  --primary-color: #9356DC;
+  --secondary-color: #FF79DA;
+  --tertiary-color: #99E2D0;
+  --background-color: #F6F6F6;
+}
+
+* {
+  font-family: "Roboto", "sans-serif";
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 /*Loader*/
 .loader {
   display: flex;
@@ -23,12 +40,12 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 0 5em;
-  background: white;
   width: 100%;
+  background: white;
+  opacity: 0.8;
   position: fixed;
   z-index: 1;
   inset: 0;
-  opacity: 0.8;
   animation: loader 4s forwards;
 }
 
@@ -68,10 +85,10 @@ body {
   width: 60px;
   height: 65px;
   inset: 100px 0 0 20px;
-  background: #9356DC;
+  background: var(--primary-color);
   transform: translateX(-30%);
   border-radius: 40%;
-  animation: fill 10s ease infinite, jump 2s cubic-bezier(0, 1.49, 1, 1);
+  animation: fill 8s ease infinite, jump 2s cubic-bezier(0, 1.49, 1, 1);
 }
 
 .glass {
@@ -99,9 +116,9 @@ body {
 .loading > span {
   width: 50px;
   height: 50px;
-  margin: 0 5px;
-  background-color: #9356DC;
   border-radius: 50%;
+  background: var(--primary-color);
+  margin: 0 5px;
   display: inline-block;
   animation: dots 3s ease-in-out infinite;
 }
@@ -249,8 +266,7 @@ main {
   position: absolute;
   left: 0;
   opacity: 0;
-  transition-property: all;
-  transition-duration: 2s;
+  transition: all 2s;
 }
 
 .restaurant-like-full:hover {
@@ -348,7 +364,6 @@ main {
 }
 
 .select-button {
-  /*   display: none; */
   position: absolute;
   top: 0px;
   right: -31px;
@@ -376,11 +391,9 @@ main {
 }
 @keyframes price-adjust {
   from {
-    /*   transform: translate(30px, -10px); */
     transform: translateX(30px);
   }
   to {
-    /*   transform: translate(-60px, 5px); */
     transform: translateX(-30px);
   }
 }
